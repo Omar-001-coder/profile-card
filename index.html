@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile-card</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    </style>
+    <style>
+        .profile {
+            font-family: 'Nunito' sans-serif;
+            text-align: center;
+            max-width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0, 2);
+            padding: 20px;
+            border: 1px solid gray;
+
+        }
+
+        .profile__image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            display: block;
+
+        }
+
+
+        .profile__name {
+            font-size: 1.2rem;
+            font-weight: bold;
+
+        }
+
+        .profile__tittle {
+            margin-bottom: 20px;
+
+        }
+
+        .profile__detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <img src="data:image/jpeg;base64,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"
+            alt="Yasmin Omar">
+        <div class="profile__name">Yasmin Omar</div>
+        <div class="profile__tittle">i am a front end developer and a programer</div>
+        <div class="profile__detail"></div>
+
+        <i class="material-icons">person</i> 120k followers
+
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

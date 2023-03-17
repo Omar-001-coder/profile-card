@@ -23,7 +23,7 @@ Read through the code
 Allows the user to see my profession and contact details
 
 # LIVE LINK
-
+https://omar-001-coder.github.io/profile-card/
 
 # BUGS
 Non responsive project section
